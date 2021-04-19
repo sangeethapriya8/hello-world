@@ -1,0 +1,15 @@
+<p>
+  <strong>Fullname:</strong>
+  <%= profile.fullname %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= profile.position %>
+</p>
+
+<p>
+  <%= link_to 'Destroy profile', [profile.user, profile],
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+</p>

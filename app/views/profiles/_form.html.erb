@@ -1,0 +1,13 @@
+<%= form_with model: [ @user, @user.profiles.build ] do |form| %>
+  <p>
+    <%= form.label :fullname %><br>
+    <%= form.text_field :fullname %>
+  </p>
+  <p>
+    <%= form.label :position %><br>
+    <%= form.text_area :position %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
